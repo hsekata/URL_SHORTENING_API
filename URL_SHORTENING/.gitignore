@@ -1,0 +1,21 @@
+# Byte-compiled / cached
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Database
+db.sqlite3
+
+# Migrations cache
+URL_SHORTENING/API_Shortening/migrations/__pycache__/
+
+# Editor & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
