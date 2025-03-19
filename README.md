@@ -24,7 +24,7 @@ cd URL_SHORTENING_API/URL_SHORTENING
 ### 2. Create a Virtual Environment
 ```sh
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+source venv/bin/activate  # On Windows use: venv/Scripts/activate
 ```
 
 ### 3. Install Dependencies
