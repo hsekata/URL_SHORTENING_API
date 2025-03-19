@@ -17,8 +17,8 @@ This is a simple Django-based URL shortener API that allows users to:
 ## Installation
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/yourusername/URL_SHORTENING_API.git
-cd url-shortener
+git clone https://github.com/hsekata/URL_SHORTENING_API
+cd URL_SHORTENING_API/URL_SHORTENING
 ```
 
 ### 2. Create a Virtual Environment
