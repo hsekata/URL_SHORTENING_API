@@ -130,10 +130,3 @@ GET /shorten/{shortcode}/stat
 | `updatedAt`  | TimeField   | Timestamp when the short URL was last updated |
 | `accessCount`| IntegerField| Number of times the short URL was accessed |
 
-
-
-## Author
-Developed by **[Your Name]**.
-
-For any queries, contact: **your.email@example.com**
-
