@@ -19,8 +19,13 @@ def CreateShortendedURL(request):
     
     existing_entry = URL.objects.filter(url=original_url).first()
     if existing_entry:
-        serializer = RetrieveOriginalURLSerializer(existing_entry)
-        return Response(serializer.data)
+        
+        return Response({
+            "url": existing_entry.url,
+            "shortcode": existing_entry.shortcode,
+            "createdAt": existing_entry.createdAt,
+            "updatedAt": existing_entry.updatedAt
+        })
 
     while True:
         shortened_url = generateShortenedURL()
@@ -30,8 +35,8 @@ def CreateShortendedURL(request):
     
     obj = URL.objects.create(url=original_url, shortcode=shortened_url)
     serializer = RetrieveOriginalURLSerializer(obj)
-    
-    return Response(serializer.data)
+    print(serializer.data)
+    return Response(serializer.data.pop("accessCount"))
 
 
 

@@ -8,8 +8,9 @@ class URLSerializer(serializers.ModelSerializer):
 
 
 class RetrieveOriginalURLSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = URL
         fields = ["url", "shortcode", "createdAt", "updatedAt", "accessCount"]
 
-
+    
