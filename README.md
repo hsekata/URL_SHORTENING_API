@@ -10,7 +10,7 @@ This is a simple Django-based URL shortener API that allows users to:
 ## Technologies Used
 - **Django** (Backend framework)
 - **Django REST Framework (DRF)** (API development)
-- **SQLite** (Default database, can be changed to PostgreSQL or MySQL)
+
 
 ---
 
